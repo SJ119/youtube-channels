@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YoutubeStats</title>
+    <meta charset="UTF-8" />
+    <link type="text/css" rel="stylesheet" href="lib/flexboxgrid.css" />
+    <link type="text/css" rel="stylesheet" href="css/youtubeld.min.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="lib/d3.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-xs-12 logo-container">
+            <img src="assets/logo.png" height="100" class='logo' />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 search-container">
+            <div class='side-item-container'>
+                <div class="side-item one">
+                    <form onsubmit="changeChannel(); return false;">
+                        <input id='channel' type="text" name="channel" placeholder="Channel (ex: Jimmy Kimmel Live)">
+                        <button id='submit' type="submit"><i class="demo-icon icon-search"></i></button>
+                    </form>
+                </div>
+                <div class="side-item two">
+                    <div>Options</div>
+                    <form onsubmit="changeOptions(); return false;">
+                        List:
+                        <input id='amount' type="number" name="amount" min="0" max="50">
+                        <br> Sort By:
+                        <select id='sort' name="fields">
+                            <option value="date">Date</option>
+                            <option value="length">Length</option>
+                            <option value="likes">Likes</option>
+                            <option value="dislikes">Dislikes</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                        <input type="submit" value="save">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 banner-container">
+        </div>
+    </div>
+    <div class="row content-container">
+        <div class="center-xs col-md-12 col-lg-6 channel-container">
+        </div>
+        <div class="center-xs col-md-12 col-lg-6 video-container">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/youtubeld.min.js"></script>
+</body>
+
+</html>

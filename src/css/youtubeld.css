@@ -1,0 +1,136 @@
+body {
+    background-color: #A7A7A7;
+    font-family: Tahoma;
+    margin: 0px;
+}
+
+.logo-container {
+    display: initial;
+    width: 100vw;
+    background-color: #CDCDCD;
+}
+
+.logo {
+    display: block;
+    margin: 10px auto;
+}
+
+.channel-container {
+    padding: 5px;
+}
+
+.video-container {
+    padding: 5px;
+}
+
+.search-container {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #FCFCFC;
+}
+
+.side-item.one form #channel {
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #848384;
+    padding: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.side-item.one form #submit {
+    background-color: #A7A7A7;
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid #A7A7A7;
+    padding: 0px;
+    height: 30px;
+    width: 70px;
+}
+
+.side-item.two {
+    display: none;
+}
+
+.channel-banner {
+    display: block;
+    margin: 10px auto;
+    border: 5px solid #FCFCFC;
+    max-height: 240px;
+}
+
+.widget-container {
+    padding: 5px 10px;
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    border: 5px solid #CDCDCD;
+}
+
+.widget-container.selected {
+    border: 5px solid #480B95;
+}
+
+.widget-container.mouseover {
+    border: 5px solid #FCFCFC;
+}
+
+.widget-container:last-child {
+    margin: 0px;
+}
+
+.test {
+    background-color: blue;
+}
+
+.widget-number {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.info {
+    position: relative;
+    padding: 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: 'grey';
+}
+
+.video-title {
+    position: absolute;
+    left: 0px;
+}
+
+.video-rating {
+    position: absolute;
+    right: 0px;
+}
+
+form {
+    display: inline-block;
+}
+
+.side-item-container {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-information {
+    color: 'grey';
+}
+
+.video-likes {
+    margin-left: 3px;
+    float: left;
+}
+
+.video-dislikes {
+    margin-left: 10px;
+    float: left;
+}
+
+.video-views {
+    margin-right: 2px;
+    float: right;
+}
