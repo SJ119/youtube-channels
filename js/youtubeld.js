@@ -11,7 +11,7 @@ function httpGet(theUrl) {
 }
 
 function requestData(channel, amount) {
-    var key = 'AIzaSyBap2Cwt5BPLCsP6i87lL1cR-a34SLtcL8';
+    var key = 'AIzaSyAfipZJqJ4ndJZHf_HFjm2E__1kaOMeqBY';
 
     var requestChannel = 'https://www.googleapis.com/youtube/v3/search?part=id%2Csnippet&maxResults=1&q=' + channel + '&type=channel&key=' + key;
     var result = JSON.parse(httpGet(requestChannel));
